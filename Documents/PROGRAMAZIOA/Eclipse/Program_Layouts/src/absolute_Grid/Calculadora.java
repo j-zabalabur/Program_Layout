@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.DropMode;
+import java.awt.Window.Type;
 
 public class Calculadora extends JFrame {
 
@@ -62,26 +63,6 @@ public class Calculadora extends JFrame {
 		buttons_grid.setBounds(10, 102, 314, 348);
 		frame_absolute.add(buttons_grid);
 		buttons_grid.setLayout(new GridLayout(0, 4, 0, 0));
-		
-		JButton btnNewButton = new JButton("C");
-		btnNewButton.setFont(new Font("Dialog", Font.PLAIN, 25));
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		buttons_grid.add(btnNewButton);
-		
-		JButton btnNewButton_1 = new JButton("New button");
-		btnNewButton_1.setFont(new Font("Dialog", Font.PLAIN, 25));
-		buttons_grid.add(btnNewButton_1);
-		
-		JButton btnNewButton_2 = new JButton("New button");
-		btnNewButton_2.setFont(new Font("Dialog", Font.PLAIN, 25));
-		buttons_grid.add(btnNewButton_2);
-		
-		JButton btn_mas = new JButton("+");
-		btn_mas.setFont(new Font("Dialog", Font.PLAIN, 25));
-		buttons_grid.add(btn_mas);
 		
 		JButton btn_7 = new JButton("7");
 		btn_7.setBackground(new Color(0, 0, 0));
