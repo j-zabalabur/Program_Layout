@@ -42,6 +42,7 @@ public class Calculadora extends JFrame {
 	 * Create the frame.
 	 */
 	public Calculadora() {
+		setTitle("Calculadora Absolute y Grid");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 350, 500);
@@ -53,8 +54,6 @@ public class Calculadora extends JFrame {
 		frame_absolute.setLayout(null);
 		
 		display = new JTextField();
-		display.setDropMode(DropMode.INSERT);
-		display.setEditable(false);
 		display.setBounds(10, 11, 314, 80);
 		frame_absolute.add(display);
 		display.setColumns(10);
