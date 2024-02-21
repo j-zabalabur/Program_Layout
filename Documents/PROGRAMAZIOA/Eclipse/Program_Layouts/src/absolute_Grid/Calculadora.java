@@ -51,7 +51,8 @@ public class Calculadora extends JFrame {
 		frame_absolute.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(frame_absolute);
-		frame_absolute.setLayout(null);
+		
+		getContentPane().setLayout(null);
 		
 		display = new JTextField();
 		display.setBounds(10, 11, 314, 80);
