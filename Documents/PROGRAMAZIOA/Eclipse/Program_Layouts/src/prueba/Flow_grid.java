@@ -10,7 +10,7 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 
-public class calcu extends JFrame {
+public class Flow_grid extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -23,7 +23,7 @@ public class calcu extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					calcu frame = new calcu();
+					Flow_grid frame = new Flow_grid();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -35,7 +35,7 @@ public class calcu extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public calcu() {
+	public Flow_grid() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 200, 185);

@@ -15,7 +15,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.DropMode;
 import java.awt.Window.Type;
 
-public class Calculadora extends JFrame {
+public class Absolute_grid extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel frame_absolute;
@@ -29,7 +29,7 @@ public class Calculadora extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Calculadora frame = new Calculadora();
+					Absolute_grid frame = new Absolute_grid();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,7 +41,7 @@ public class Calculadora extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Calculadora() {
+	public Absolute_grid() {
 		setTitle("Calculadora Absolute y Grid");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,6 +55,7 @@ public class Calculadora extends JFrame {
 		getContentPane().setLayout(null);
 		
 		display = new JTextField();
+		display.setEditable(false);
 		display.setBounds(10, 11, 314, 80);
 		frame_absolute.add(display);
 		display.setColumns(10);
